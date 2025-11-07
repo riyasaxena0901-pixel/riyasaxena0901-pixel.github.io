@@ -105,7 +105,7 @@ prachiName.addEventListener('click', function(e) {
   nameClickCount++;
   incrementInteraction();
   
-  if (nameClickCount === 3) {
+  if (nameClickCount === 2) {
     const originalText = this.textContent;
     this.textContent = '💙 Prachi 💙';
     createFloatingHeart(e.clientX, e.clientY);
@@ -278,3 +278,4 @@ visitCount++;
 localStorage.setItem('prachiVisitCount', visitCount);
 
 console.log(`🎉 Visit #${visitCount}! Interactive features: Click sections, press 'R' for reading, 'H' for hearts, 'SPACE' for message!`);
+
